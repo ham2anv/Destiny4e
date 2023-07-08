@@ -1,0 +1,73 @@
+html {
+  color-scheme: light dark;
+}
+
+body {
+  max-width: min(calc(100% - 3rem), 65ch);
+  margin-inline: auto;
+  font: 1.1rem / 1.6 Georgia, "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Tahoma, "Arial Black", Arial, sans-serif;
+  margin-block: 2em 0;
+}
+
+.power-card {
+  border: 1px solid currentColor;
+  margin-block: 1rem;
+}
+
+.power-card > :is(h4,p) {
+  margin: 0;
+  padding-inline: 1rem;
+  text-indent: -0.5rem;
+}
+
+.power-card > h4 {
+  background-color: var(--title-color, transparent);
+  color: var(--title-text, currentColor);
+  padding-block: 0.5rem;
+}
+
+.power-card > :is(:last-child, h4) {
+  margin-block-end: 0.5rem;
+}
+
+.recharge {
+  --title-color: purple;
+  --title-text: white;
+}
+
+.at-will {
+  --title-color: limegreen;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border-block-end: 1px solid currentColor;
+}
+
+th,
+td {
+  padding-block: 0.4em;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+  padding-inline-start: 2ch;
+}
+
+tr:nth-child(even):not(:last-child),
+pre,
+code {
+  border-block-end: 1px dotted currentColor;
+}
